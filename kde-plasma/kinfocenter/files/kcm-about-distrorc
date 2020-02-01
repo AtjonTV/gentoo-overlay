@@ -1,6 +1,7 @@
 [General]
 Name=TLBH Linux
-LogoPath=/usr/share/kinfocenter/glogo-small.png
+#LogoPath=/usr/share/kinfocenter/glogo-small.png
+LogoPath=/usr/share/kinfocenter/tlbh-logo.png
 Website=https://atvg-studios.com
-Version=2020.1-2
+Version=2020.1-3
 Variant=Gentoo

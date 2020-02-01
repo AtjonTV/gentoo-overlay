@@ -12,6 +12,7 @@ inherit ecm kde.org
 DESCRIPTION="Utility providing information about the computer hardware"
 HOMEPAGE="https://userbase.kde.org/KInfoCenter"
 SRC_URI+=" https://www.gentoo.org/assets/img/logo/gentoo-3d-small.png -> glogo-small.png"
+SRC_URI+=" https://raw.githubusercontent.com/AtjonTV/gentoo-overlay/master/kde-plasma/kinfocenter/files/tlbh-logo.png -> tlbh-logo.png"
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
 KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~x86"
@@ -88,6 +89,7 @@ src_install() {
 
 	insinto /usr/share/${PN}
 	doins "${DISTDIR}"/glogo-small.png
+        doins "${DISTDIR}"/tlbh-logo.png
 }
 
 pkg_postinst() {
