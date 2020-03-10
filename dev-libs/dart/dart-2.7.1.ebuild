@@ -21,8 +21,6 @@ BDEPEND=""
 S="${WORKDIR}"
 
 src_install() {
-#	unzip "dartsdk-linux-x64-release.zip"
-
         exeinto /usr/bin
         exeopts -m0755
         doexe "${S}"/dart-sdk/bin/dart
@@ -39,7 +37,7 @@ src_install() {
 	mv dart-sdk "opt/dart/${PV}"
 
         insinto /opt/dart/
-        doins -r "${S}"/opt/dart/
+        doins -r "${S}"/opt/dart/"${PV}"
 }
 
 
