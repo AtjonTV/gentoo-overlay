@@ -15,7 +15,7 @@ SRC_URI+=" https://www.gentoo.org/assets/img/logo/gentoo-3d-small.png -> glogo-s
 SRC_URI+=" https://raw.githubusercontent.com/AtjonTV/gentoo-overlay/master/kde-plasma/kinfocenter/files/tlbh-logo.png -> tlbh-logo.png"
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
-KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~x86"
+KEYWORDS="amd64 ~arm ~arm64 ~ppc64 ~x86"
 IUSE="gles2 ieee1394 +opengl +pci wayland"
 
 REQUIRED_USE="wayland? ( || ( gles2 opengl ) )"
