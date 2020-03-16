@@ -17,12 +17,17 @@ IUSE="debug idledetection timesheettools"
 DEPEND=">=dev-qt/qtcore-5.10.0
 	>=dev-qt/qtgui-5.10.0
 	>=dev-qt/qtsql-5.10.0
+	>=dev-qt/qtwidgets-5.10.0
+	>=dev-qt/qtxml-5.10.0
+	>=dev-qt/qtnetwork-5.10.0
+	>=dev-qt/qttest-5.10.0
+	>=dev-qt/qtdbus-5.10.0
+	>=dev-libs/qtkeychain-0.9.0
 	idledetection? ( x11-libs/libXScrnSaver )
 	timesheettools? ( dev-db/mysql dev-db/mysql-connector-c++ )
 "
 
 src_unpack() {
-	# Damn Github
 	unpack ${A}
 	mv *-Charm-* "${S}"
 }
