@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>thomas.obernosterer@atvg-studios.com</email>
+		<name>Thomas Obernosterer</name>
+	</maintainer>
+	<maintainer type="project">
+		<email>office@atvg-studios.com</email>
+		<name>ATVG-Studios Repositories Maintainers</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">sekrit-twc/zimg</remote-id>
+	</upstream>
+</pkgmetadata>
+
