@@ -1,0 +1,13 @@
+diff --git a/files/kcm-about-distrorc b/files/kcm-about-distrorc
+index b55389f..b367abf 100644
+--- a/files/kcm-about-distrorc
++++ b/files/kcm-about-distrorc
+@@ -1,4 +1,6 @@
+ [General]
+-Name=Gentoo Linux
++Name=TLBH Linux
+ LogoPath=/usr/share/kinfocenter/glogo-small.png
+-Website=https://www.gentoo.org/
++Website=https://atvg-studios.com
++Version=2020.4-2
++Variant=Gentoo
