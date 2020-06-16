@@ -8,10 +8,7 @@ inherit pax-utils unpacker xdg-utils
 DESCRIPTION="Video conferencing and web conferencing service"
 HOMEPAGE="https://zoom.us"
 
-SRC_URI="
-	amd64? ( https://zoom.us/client/${PV}/${PN}_amd64.deb -> ${P}_amd64.deb  )
-	x86? ( https://zoom.us/client/${PV}/${PN}_i386.deb -> ${P}_x86.deb  )
-"
+SRC_URI="https://zoom.us/client/${PV}/${PN}_amd64.deb -> ${P}_amd64.deb"
 
 LICENSE="ZOOM"
 SLOT="0"
