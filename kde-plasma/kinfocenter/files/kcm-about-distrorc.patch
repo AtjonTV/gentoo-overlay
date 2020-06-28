@@ -5,9 +5,9 @@ index b55389f..b367abf 100644
 @@ -1,4 +1,6 @@
  [General]
 -Name=Gentoo Linux
-+Name=TLBH Linux
++Name=ATVG Linux
  LogoPath=/usr/share/kinfocenter/glogo-small.png
 -Website=https://www.gentoo.org/
 +Website=https://atvg-studios.com
-+Version=2020.5-1
-+Variant=Gentoo
++Version=2020.6-0
++Variant=Gentoo Base 2.6
