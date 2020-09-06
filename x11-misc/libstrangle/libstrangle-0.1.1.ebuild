@@ -10,10 +10,6 @@ KEYWORDS="amd64 x86"
 # TODO: opengl vulkan useflags
 ISUE=""
 
-PATCHES="
-    ${FILESDIR}/remove-hardcoded-compiler.patch
-"
-
 src_compile() {
     emake
 }
