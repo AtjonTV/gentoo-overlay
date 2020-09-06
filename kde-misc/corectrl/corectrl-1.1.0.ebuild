@@ -29,6 +29,7 @@ DEPEND="
 	dev-qt/qtquickcontrols2:5
 	dev-qt/qtwidgets:5
 	dev-qt/linguist-tools:5
+	dev-qt/qtsvg:5
 	kde-frameworks/kauth
 	kde-frameworks/karchive
 	dev-libs/botan:2
