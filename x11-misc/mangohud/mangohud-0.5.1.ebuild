@@ -6,9 +6,10 @@ DESCRIPTION="A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/G
 HOMEPAGE="https://github.com/flightlessmango/MangoHud"
 LICENSE="MIT"
 SLOT=0
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 
 EGIT_REPO_URI="${HOMEPAGE}"
+EGIT_commit="v${PV}"
 
 BDEPEND="
     dev-util/vulkan-headers
