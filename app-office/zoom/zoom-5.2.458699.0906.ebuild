@@ -59,7 +59,7 @@ src_unpack() {
 }
 
 src_prepare() {
-	rm _gpgbuilder || die
+	rm _gpgbuilder || echo "_gpgbuilder not found in DEB extraction"
 	sed -i -e 's:Icon=Zoom.png:Icon=Zoom:' usr/share/applications/${PN^}.desktop || die
 	sed -i -e 's:Application;::' usr/share/applications/${PN^}.desktop || die
 	mv usr/share/doc/${PN}/changelog.gz .
