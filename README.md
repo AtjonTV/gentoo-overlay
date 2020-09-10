@@ -21,6 +21,16 @@ only work out for me.
 
 Also, I will license my fork under the WTFPL.
 
+## Releases
+
+I am making releases so that I have a list of changes for a given timestamp.
+
+Previously I used the scheme `year.count-count`, the fist count is for the release/month and the second for the patch in a month/release.
+
+From now on I will use the format `year.month.release-rpatch`. release is the count of releases in a month, and patch is the counf of patches in the release; e.g. `-r1`, this will be obmitted when on each first release though.
+
+As of this writing, the last release I will rerelease in the new format is `2020.9.3-r1`.
+
 Finally, here the original Readme:
 
 # Private Gentoo Overlay
@@ -34,7 +44,7 @@ just get the software installed and tracked by portage
 for easily removal and upgrades.
 
 You are free to take all ebuilds and copy them to your
-own local repo. There is no license or anything :)
+own local repo. There is no copyleft or copyright. The WTFPL is fully permissive for EVERYTHING :)
 
 Use all ebuilds at your own risk. I'm not responsible if
 you brick your Gentoo install. Pay attention to eventual
