@@ -1,6 +1,6 @@
 EAPI=7
 
-inherit git-r3 cmake-utils
+inherit git-r3 meson
 
 DESCRIPTION="Gtk module for exporting menus"
 LICENSE="LGPL3"
@@ -8,7 +8,7 @@ EGIT_REPO_URI="https://gitlab.com/vala-panel-project/vala-panel-appmenu"
 EGIT_COMMIT="${PV}"
 
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 IUSE="gtk3 gtk2"
 
 S="${WORKDIR}/${P}/subprojects/appmenu-gtk-module"
@@ -18,19 +18,18 @@ DEPEND="
 "
 
 PATCHES="
-    ${FILESDIR}/enable-gnu-source.patch
     ${FILESDIR}/fixes.patch
 "
 
 src_configure() {
-    local mycmakeargs=(
+    local emesonargs=(
         -DCMAKE_INSTALL_PREFIX=/usr
         -DCMAKE_INSTALL_LIBDIR=lib64
         -DCMAKE_INSTALL_LIBEXECDIR=lib
         -DGSETTINGS_LOCALINSTALL=OFF
     )
 
-    cmake-utils_src_configure
+    meson_src_configure
 }
 
 # copied from gnome2 inherit because it throws an error when using EAPI version 7
