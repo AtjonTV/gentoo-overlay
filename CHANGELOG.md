@@ -1,5 +1,13 @@
 # Changelog
 
+## 2020.9.4-r1 (Package Fix 1 for September Update 4)
+
+* [fe31dd4] dev-libs/appmenu-gtk-module: fix ebuild 0.7.4-r1
+* [0fdb57c] dev-libs/appmenu-gtk-module: fix build (now uses meson)
+* ~~[87ac142] Revert "dev-libs/appmenu-gtk-module: remove 0.7.4 (build errors)"~~
+* [543f55a] kde-misc/krunner-symbols: fix ebuilds 1.0.4-r1 and 1.1.0-r1
+* ~~[1879825] dev-libs/appmenu-gtk-module: remove 0.7.4 (build errors)~~
+
 ## 2020.9.4 (September Update 4)
 
 * [5710feb] test/test: removed
