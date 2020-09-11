@@ -6,7 +6,7 @@ EAPI=7
 inherit eutils git-r3
 
 EGIT_REPO_URI="https://github.com/domschrei/krunner-symbols"
-EGIT_COMMIT="v${PV}"
+EGIT_COMMIT="${PV}"
 
 DESCRIPTION="A lightweight KRunner plugin (Plasma 5) to retrieve unicode symbols, or any other string, based on a corresponding keyword."
 HOMEPAGE="https://github.com/domschrei/krunner-symbols"
@@ -24,7 +24,19 @@ BDEPEND=""
 src_compile() {
 	mkdir build
 	cd build
-	cmake .. -DCMAKE_INSTALL_PREFIX=`kf5-config --prefix` -DQT_PLUGIN_INSTALL_DIR=`kf5-config --qt-plugins` -DCMAKE_BUILD_TYPE=Release
+
+    # Get correct installation directories
+    prefix=$(kf5-config --prefix)
+    loc_plugin=$(kf5-config --qt-plugins|sed 's.^'"$prefix"'/..')
+    loc_desktop=$(kf5-config --path services|awk -F ':' '{print $NF}'|sed 's.^'"$prefix"'/..')
+    loc_config=share/config
+
+	cmake -G "Unix Makefiles" .. -DCMAKE_INSTALL_PREFIX=$prefix \
+        -DLOCATION_PLUGIN=$loc_plugin \
+        -DLOCATION_DESKTOP=$loc_desktop \
+        -DLOCATION_CONFIG=$loc_config \
+        -DCMAKE_BUILD_TYPE=Release
+
 	emake
 }
 
