@@ -1,5 +1,11 @@
 # Changelog
 
+## 2020.9.5 (September Update 5)
+
+* [e85884f] media-gfx/flameshot: update 9999 for cmake
+* [29edf92] media-gfx/flameshot: update (0.8.0.rc1); 0.6.0 is now declared stable
+* [0c576d0] dev-util/cloc: update (1.88)
+
 ## 2020.9.4-r1 (Package Fix 1 for September Update 4)
 
 * [fe31dd4] dev-libs/appmenu-gtk-module: fix ebuild 0.7.4-r1
