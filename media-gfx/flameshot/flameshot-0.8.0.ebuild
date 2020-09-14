@@ -3,14 +3,15 @@
 
 EAPI=7
 
-inherit qmake-utils xdg-utils
+inherit cmake cmake-utils xdg-utils git-r3
 
 DESCRIPTION="Powerful yet simple to use screenshot software for LLVM/Linux"
 HOMEPAGE="https://flameshot.js.org"
-SRC_URI="https://github.com/lupoDharkael/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-KEYWORDS="amd64 arm arm64 x86"
+EGIT_REPO_URI="https://github.com/flameshot-org/${PN}.git"
+EGIT_COMMIT="v${PV}.rc1"
 
 LICENSE="FreeArt GPL-3+ Apache-2.0"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 SLOT="0"
 IUSE="kde"
 
@@ -29,22 +30,9 @@ RDEPEND="${DEPEND}
 	)
 "
 
-src_prepare(){
-	sed -i "s|TAG_VERSION = .*|TAG_VERSION = v${PV}|" ${PN}.pro
-	sed -i "s#icons#pixmaps#" ${PN}.pro
-	sed -i "s#^Icon=.*#Icon=${PN}#" "docs/desktopEntry/package/${PN}.desktop" \
-		"snap/gui/${PN}.desktop" \
-		"snap/gui/${PN}-init.desktop"
-	default_src_prepare
-}
-
-src_configure(){
-	eqmake5 CONFIG+=packaging
-}
-
 src_install(){
-	cp "${FILESDIR}/flameshot.desktop" "docs/desktopEntry/package/flameshot.desktop"
-	INSTALL_ROOT="${D}" default_src_install
+    cmake-utils_src_install
+
 	if use kde; then
 		insinto /usr/share/config
 		newins docs/shortcuts-config/${PN}-shortcuts-kde ${PN}rc

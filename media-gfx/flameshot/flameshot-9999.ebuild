@@ -9,11 +9,12 @@ DESCRIPTION="Powerful yet simple to use screenshot software for LLVM/Linux"
 HOMEPAGE="https://flameshot.js.org"
 
 if [[ ${PV} == 9999 ]]; then
-        inherit git-r3
-        EGIT_REPO_URI="https://github.com/lupoDharkael/${PN}.git"
+    inherit git-r3
+    KEYWORDS=""
+    EGIT_REPO_URI="https://github.com/lupoDharkael/${PN}.git"
 else
-	SRC_URI="https://github.com/lupoDharkael/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-        KEYWORDS="~amd64"
+    SRC_URI="https://github.com/lupoDharkael/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+    KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 fi
 
 LICENSE="FreeArt GPL-3+ Apache-2.0"
