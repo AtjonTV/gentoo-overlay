@@ -1,5 +1,16 @@
 # Changelog
 
+## 2020.9.6 (September Update 6)
+
+* [15430ce] media-gfx/flameshot: mark 0.8.0 as stable
+* [0e15c5c] sys-kernel/xpadneo: update (0.8.3)
+* [5236ec3] dev-qt/qt-creator-doc-cppreference: readd package
+* [350d978] dev-qt/qt-creator-plugin-spellchecker: readd package
+* [df280f1] dev-qt/qt-creator-src: readd package
+* [099e949] dev-qt/qt-creator: readd package
+* [a67385a] dev-util/binaryen: update (97)
+* [39d864b] app-admin/bitwarden-cli-bin: update (1.12.0)
+
 ## 2020.9.5 (September Update 5)
 
 * [e85884f] media-gfx/flameshot: update 9999 for cmake
