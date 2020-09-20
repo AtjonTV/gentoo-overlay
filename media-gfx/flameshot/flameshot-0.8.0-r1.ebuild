@@ -8,10 +8,10 @@ inherit cmake cmake-utils xdg-utils git-r3
 DESCRIPTION="Powerful yet simple to use screenshot software for LLVM/Linux"
 HOMEPAGE="https://flameshot.js.org"
 EGIT_REPO_URI="https://github.com/flameshot-org/${PN}.git"
-EGIT_COMMIT="v${PV}.rc1"
+EGIT_COMMIT="v${PV}"
 
 LICENSE="FreeArt GPL-3+ Apache-2.0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86"
+KEYWORDS="amd64 arm arm64 x86"
 SLOT="0"
 IUSE="kde"
 
