@@ -8,10 +8,7 @@ inherit pax-utils unpacker xdg-utils
 DESCRIPTION="Video conferencing and web conferencing service"
 HOMEPAGE="https://zoom.us"
 
-SRC_URI="
-	amd64? ( https://zoom.us/client/${PV}/${PN}_amd64.deb -> ${P}_amd64.deb  )
-	x86? ( https://zoom.us/client/${PV}/${PN}_i386.deb -> ${P}_x86.deb  )
-"
+SRC_URI="https://zoom.us/client/${PV}/${PN}_amd64.deb -> ${P}_amd64.deb"
 
 LICENSE="ZOOM"
 SLOT="0"
@@ -62,7 +59,7 @@ src_unpack() {
 }
 
 src_prepare() {
-	rm _gpgbuilder || die
+	rm _gpgbuilder || echo "_gpgbuilder not found in DEB extraction"
 	sed -i -e 's:Icon=Zoom.png:Icon=Zoom:' usr/share/applications/${PN^}.desktop || die
 	sed -i -e 's:Application;::' usr/share/applications/${PN^}.desktop || die
 	mv usr/share/doc/${PN}/changelog.gz .
