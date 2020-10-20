@@ -1,5 +1,16 @@
 # Changelog
 
+## 2020.10.1 (October Update 1)
+
+* [cb87862] app-office/wps-office: removed 9126 and 9505 builds
+* [0ba336f] app-office/wps-office: uodate (11.1.0.9662)
+* [064f608] app-office/zoom: update (5.3.472687.1012)
+* [64439eb] media-gfx/flameshot: update (0.8.5)
+* [803a0d9] x11-drivers/nvidia-drivers: update (455.23.04-r1)
+* [fa0c345] app-office/zoom: update (5.3); removed 5.0, 5.1
+* [aa00903] app-i18n/mozc: add python 3 patch
+* [c330e6a] dev-util/gyp: add 2019 version with python 3 patch
+
 ## 2020.9.6 (September Update 6)
 
 * [15430ce] media-gfx/flameshot: mark 0.8.0 as stable
