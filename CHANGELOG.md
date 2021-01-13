@@ -1,5 +1,14 @@
 # Changelog
 
+## 2021.1.1  (Januar Update 1)
+
+* [f22997a] sys-process/bpytop: new package
+* [964212b] sys-kernel/xpadneo: update (0.8.5)
+* [12821aa] app-office/zoom: update (5.4.57450)
+* [1d5cfb8] app-office/wps-office: update (11.1.0.9719)
+* [6484da8] app-office/zoom: update (5.4); removed 5.2
+* [95c7c95] net-misc/youtube-dl: add updated and maintained fork
+
 ## 2020.10.1 (October Update 1)
 
 * [cb87862] app-office/wps-office: removed 9126 and 9505 builds
