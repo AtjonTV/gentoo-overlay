@@ -1,5 +1,26 @@
 # Changelog
 
+## 2021.5.1 (May Update 1)
+
+* [0194546] virtual/wine: new package 0-r7
+* [17a9fec] dev-libs/flutter: remove package
+* [5c421f7] app-office/zoon: add 5.6
+* [91409c7] dev-util/cloc: add 1.90
+* [5ef79a1] media-gfx/flameshot: remove 0.6.0; add 0.9.0_rc2
+* [72c2d58] x11-drivers/nvidia-drivers: delete 440 & 455; add 465
+* [d0ad9bb] dev-util/rz-ghidra: new package
+* [9dc5018] dev-util/cutter: update
+* [1d9951a] dev-util/rizin: update
+* [c2828f2] dev-util/cutter: add cutter based on rizin
+* [d5ac103] dev-util/rizin: new package
+* [35379f1] app-office/zoom: update (5.4.57862)
+* [fdcee6b] app-office/zoom: remove 5.3*, 5.4.53391
+* [20048af] app-office/wps-office: update (11.1.0.10161)
+* [7f45f78] app-office/wps-office: remove 11.1.0.9615 and x.9662
+* [e46eef4] sys-process/bpytop: remove 1.0.51
+* [f206099] sys-process/bpytop: update (1.0.60)
+* [ec88f1f] net-misc/teamviewer: new package (15.14.3)
+
 ## 2021.1.1  (Januar Update 1)
 
 * [f22997a] sys-process/bpytop: new package
